@@ -8,10 +8,9 @@ import { Component } from "react";
 class App extends Component {
   render() {
     console.log(generatePalette(seedColors[2]));
-    
     return (
       <div>
-        <Pallete {...seedColors[2]} />
+        <Pallete pallete={generatePalette(seedColors[2])} />
       </div>
     );
   }
