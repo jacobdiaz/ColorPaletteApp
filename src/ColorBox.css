@@ -1,10 +1,11 @@
 .color-box {
-  width: 50%;
-  height: 20%;
-  margin: 0 auto;
+  min-height: 250px;
+  width: 18%;
+  margin: 5px;
   display: inline-block;
   position: relative;
   cursor: pointer;
+  border-radius: 8px;
   margin-bottom: -3.5px;
 }
 
@@ -26,14 +27,16 @@
 }
 
 .box-content {
-  padding: 10px;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
   width: 100%;
   left: 0px;
   bottom: 0px;
   letter-spacing: 1px;
   font-size: 12px;
   text-transform: uppercase;
+  clear: both;
 }
 /* When you hover over the colorbox... affect the copy button */
 .color-box:hover .copy-button {

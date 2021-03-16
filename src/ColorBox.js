@@ -19,6 +19,7 @@ export default class ColorBox extends Component {
   }
 
   render() {
+    console.log(this.props);
     // Grab our props!
     const { name, background } = this.props;
     const { copied } = this.state;
@@ -46,6 +47,7 @@ export default class ColorBox extends Component {
           <div className="copy-container">
             <div className="box-content">
               <span>{name}</span>
+              <span>{background}</span>
             </div>
             <button className="copy-button">Copy</button>
             <button className="more-button">More</button>

@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import ColorBox from "./ColorBox";
+import "rc-slider/assets/index.css";
 import "./Palette.css";
 import uuid from "react-uuid";
 import Slider from "rc-slider";
-import "rc-slider/assets/index.css";
+import NavBar from "./NavBar";
+import logo from "./slack_logo.png";
 
 export default class Palette extends Component {
   constructor(props) {
@@ -24,19 +26,24 @@ export default class Palette extends Component {
     ));
 
     return (
-      <div className="palette">
-        {/* Slider */}
-        <Slider
-          defaultValue={this.state.level}
-          min={100}
-          max={900}
-          step={100}
-          onAfterChange={this.changeLevel} // Call change level and pass in the new level
-        />
-
-        {/* TODO Navbar */}
-        <div className="palette-colors">{colorBoxes}</div>
-        {/* TODO Navbar */}
+      <div>
+        <NavBar />
+        <div className="slider">
+          <Slider
+            defaultValue={this.state.level}
+            min={100}
+            max={900}
+            step={100}
+            onAfterChange={this.changeLevel} // Call change level and pass in the new level
+          />
+        </div>
+        <div className="palette-hero">
+          <img src={logo} />
+        </div>
+        <div className="palette">
+          <div className="palette-colors">{colorBoxes}</div>
+          {/* TODO Navbar */}
+        </div>
       </div>
     );
   }
