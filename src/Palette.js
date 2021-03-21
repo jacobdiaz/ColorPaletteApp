@@ -31,19 +31,24 @@ export default class Palette extends Component {
 
     return (
       <div>
+        {/* NavBar */}
         <NavBar
           level={level}
           changeLevel={this.changeLevel}
           handleChange={this.changeFormat}
         />
 
+        {/* Hero Section */}
         <div className="palette-hero">
           <img src={logo} />
         </div>
+
+        {/* Color Boxes */}
         <div className="palette">
           <div className="palette-colors">{colorBoxes}</div>
-          {/* TODO Navbar */}
         </div>
+
+        {/* Footer */}
       </div>
     );
   }
