@@ -5,7 +5,7 @@
   height: 6vh;
 }
 .slider {
-  width: 350px;
+  width: 20vw;
   margin: 0 10px;
   display: flex;
   flex-direction: row;
@@ -17,14 +17,19 @@
   align-items: center;
   margin-right: 50px;
   height: 100%;
-  background-color: rgb(192, 192, 192);
+  background-color: rgb(73, 73, 73);
 }
 .logo a {
   text-decoration: none;
   color: black;
 }
 .slider p {
-  width: 120px;
+  width: 110px;
+}
+
+.select-container {
+  margin: auto;
+  margin-right: 1rem;
 }
 /* Overwriting css from rc-slider.css file  */
 .rc-slider-track {
