@@ -17,27 +17,3 @@
   margin: 10px;
   display: flex;
 }
-.slider {
-  width: 350px;
-  margin: 0 10px;
-  display: inline-block;
-}
-
-/* Overwriting css from rc-slider.css file  */
-.rc-slider-track {
-  background-color: transparent;
-}
-.rc-slider-handle,
-.rc-slider-handle:active,
-.rc-slider-handle:focus,
-.rc-slider-handle:hover {
-  margin-top: -3px;
-  margin-left: -7px;
-  background-color: #e3ab29;
-  outline: none;
-  border: 2px solid gold;
-  box-shadow: none;
-}
-.rc-slider-rail {
-  height: 8px;
-}
